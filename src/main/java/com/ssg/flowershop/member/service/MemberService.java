@@ -1,0 +1,12 @@
+package com.ssg.flowershop.member.service;
+
+import com.ssg.flowershop.member.entity.Member;
+
+public interface MemberService {
+
+    // 회원 데이터 저장
+    void save(String name, String loginId, String loginPw); // ①
+
+    // 회원 데이터 조회
+    Member find(String loginId, String loginPw); // ②
+}
